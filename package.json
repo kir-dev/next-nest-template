@@ -1,0 +1,17 @@
+{
+  "name": "next-nest-template",
+  "version": "0.0.0",
+  "description": "Template repository for full-stack NestJS + NextJS projects",
+  "author": "Kir-Dev",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start:backend": "cd apps/backend && yarn start:dev",
+    "start:frontend": "cd apps/frontend && yarn dev",
+    "build:backend": "cd apps/backend && yarn build",
+    "build:frontend": "cd apps/frontend && yarn build"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
