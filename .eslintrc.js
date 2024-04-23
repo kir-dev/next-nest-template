@@ -5,7 +5,7 @@ module.exports = {
   env: {
     node: true,
   },
-  ignorePatterns: ['.eslintrc.js', '.eslintrc.cjs', '.prettierrc.js'],
+  ignorePatterns: ['.eslintrc.js', '.prettierrc.js'],
   rules: {
     'prettier/prettier': 'error',
     'simple-import-sort/imports': 'error',
