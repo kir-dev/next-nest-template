@@ -4,5 +4,9 @@
   "sourceRoot": "src",
   "generateOptions": {
     "spec": false
+  },
+  "compilerOptions": {
+    "builder": "swc",
+    "typeCheck": true
   }
 }
