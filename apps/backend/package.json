@@ -11,7 +11,12 @@
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/main"
+    "start:prod": "node dist/main",
+    "lint": "eslint 'src/**/*.ts'",
+    "db:seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@nestjs/common": "^11.0.10",
@@ -30,8 +35,9 @@
     "@nestjs/schematics": "^11.0.1",
     "@types/express": "^5.0.0",
     "@types/node": "^20.17.19",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
-    "@typescript-eslint/parser": "^7.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "eslint-config-nestjs": "^0.8.0",
     "prisma": "^6.4.1",
     "source-map-support": "^0.5.21",
     "ts-loader": "^9.5.2",
