@@ -19,30 +19,30 @@
     "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
-    "@nestjs/common": "^11.0.10",
-    "@nestjs/core": "^11.0.10",
-    "@nestjs/platform-express": "^11.0.10",
-    "@nestjs/swagger": "^11.0.4",
-    "@prisma/client": "^6.4.1",
-    "@scalar/nestjs-api-reference": "^0.3.184",
-    "nestjs-prisma": "^0.24.0",
+    "@nestjs/common": "^11.0.12",
+    "@nestjs/core": "^11.0.12",
+    "@nestjs/platform-express": "^11.0.12",
+    "@nestjs/swagger": "^11.0.7",
+    "@prisma/client": "^6.5.0",
+    "@scalar/nestjs-api-reference": "^0.4.2",
+    "nestjs-prisma": "^0.25.0",
     "reflect-metadata": "^0.2.2",
     "rimraf": "^6.0.1",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
-    "@nestjs/cli": "^11.0.4",
-    "@nestjs/schematics": "^11.0.1",
-    "@types/express": "^5.0.0",
-    "@types/node": "^20.17.19",
-    "@typescript-eslint/eslint-plugin": "^8.24.1",
-    "@typescript-eslint/parser": "^8.24.1",
+    "@nestjs/cli": "^11.0.5",
+    "@nestjs/schematics": "^11.0.2",
+    "@types/express": "^5.0.1",
+    "@types/node": "^20.17.27",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
     "eslint-config-nestjs": "^0.8.0",
-    "prisma": "^6.4.1",
+    "prisma": "^6.5.0",
     "source-map-support": "^0.5.21",
     "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "4.2.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.8.2"
   }
 }
