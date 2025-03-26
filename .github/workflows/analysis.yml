@@ -26,14 +26,14 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
-      - name: Use Yarn v4
-        run: corepack prepare yarn@4.7.0 --activate
+      - name: Use Pnpm v10
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
       - name: Run ESLint check
-        run: yarn lint
+        run: pnpm lint
 
   format-check:
     name: Prettier Check
@@ -50,14 +50,14 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
-      - name: Use Yarn v4
-        run: corepack prepare yarn@4.7.0 --activate
+      - name: Use Pnpm v10
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
-      - name: Run Prettier check
-        run: yarn format:check
+      - name: Run ESLint check
+        run: pnpm lint
 
   build:
     name: Build
@@ -77,11 +77,14 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
-      - name: Use Yarn v4
-        run: corepack prepare yarn@4.7.0 --activate
+      - name: Use Pnpm
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
-      - name: Build
-        run: yarn build:backend
+      - name: Build backend
+        run: pnpm build:backend
+
+      - name: Build frontend
+        run: pnpm build:frontend
