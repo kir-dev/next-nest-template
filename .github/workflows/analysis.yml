@@ -56,8 +56,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Run ESLint check
-        run: pnpm lint
+      - name: Run Prettier check
+        run: pnpm format:check
 
   build:
     name: Build

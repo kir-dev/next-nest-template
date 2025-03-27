@@ -66,4 +66,11 @@ export default [
       '@typescript-eslint/no-unused-vars': 'error',
     },
   },
+  {
+    // Disable explicit return type rule for React components
+    files: ['**/*.tsx'],
+    rules: {
+      '@typescript-eslint/explicit-function-return-type': 'off',
+    },
+  },
 ];
