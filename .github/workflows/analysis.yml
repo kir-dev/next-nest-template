@@ -30,7 +30,7 @@ jobs:
         run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Run ESLint check
         run: pnpm lint
@@ -54,7 +54,7 @@ jobs:
         run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Run ESLint check
         run: pnpm lint
@@ -81,7 +81,7 @@ jobs:
         run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build backend
         run: pnpm build:backend
