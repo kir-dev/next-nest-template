@@ -21,13 +21,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use Pnpm v10
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Run ESLint check
-        run: yarn lint
+        run: pnpm lint
 
   format-check:
     name: Prettier Check
@@ -39,13 +45,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use Pnpm v10
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Run Prettier check
-        run: yarn format:check
+        run: pnpm format:check
 
   build:
     name: Build
@@ -60,10 +72,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Use Pnpm
+        run: corepack prepare pnpm@latest-10 --activate
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install --no-frozen-lockfile
 
-      - name: Build
-        run: yarn build:backend
+      - name: Build backend
+        run: pnpm build:backend
+
+      - name: Build frontend
+        run: pnpm build:frontend

@@ -8,15 +8,15 @@ including shadcn/ui, ESLint, Prettier, and GitHub Actions.
 
 ### Prerequisites
 
-- Node.js 20
-- Yarn 1.22
+- Node.js 22
+- Pnpm 10
 
 ### Installation
 
 You only need to install dependencies in the root directory.
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ### Linter and Formatter Configuration
@@ -28,15 +28,15 @@ Set up ESLint and Prettier in your IDE and check `fix on save` or `format on sav
 You can run the following commands to check linting and formatting issues.
 
 ```bash
-yarn lint
+pnpm lint
 # or
-yarn lint:fix
+pnpm lint:fix
 ```
 
 ```bash
-yarn format:check
+pnpm format:check
 # or
-yarn format
+pnpm format
 ```
 
 ### Development
@@ -44,11 +44,11 @@ yarn format
 You can run the backend and frontend separately.
 
 ```bash
-yarn start:backend # Starts on http://localhost:3001
+pnpm start:backend # Starts on http://localhost:3001
 ```
 
 ```bash
-yarn start:frontend # Starts on http://localhost:3000
+pnpm start:frontend # Starts on http://localhost:3000
 ```
 
 ### After Development
@@ -56,30 +56,27 @@ yarn start:frontend # Starts on http://localhost:3000
 You can build the frontend and run the application.
 
 ```bash
-yarn build:frontend
+pnpm build:frontend
 ```
 
 Or build the backend.
 
 ```bash
-yarn build:backend
+pnpm build:backend
 ```
 
 There are recommended GitHub Actions workflows for this setup, which will fail if one of the following commands fails:
 
 ```bash
-yarn lint
+pnpm lint
 ```
 
 ```bash
-yarn format:check
+pnpm format:check
 ```
 
 ```bash
-yarn build:backend
+pnpm build:backend
 ```
 
 ## Happy Coding!
-
-
-
